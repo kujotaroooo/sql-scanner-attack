@@ -38,6 +38,11 @@ example:
 
 C:\myprojloc>python sqli_scanner.py "https://archivewordz.fwh.is/database.php?id=1"
 
+
+NOTE!
+
+YOU CANT ATTACK A WEBSITE WITH JUST THE MAIN LINK OR LANDING PAGE MAKE SURE THE FILE PATH IS CONNECTED TO DATABASE
+
 Do NOT scan or test websites without permission.
 
 This tool is designed for ethical hacking, penetration testing training, and bug bounty practice under legal boundaries.
