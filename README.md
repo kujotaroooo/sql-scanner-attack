@@ -15,18 +15,25 @@ bash
 pip install requests
 
 you can git clone or just copy the code and create file
-to git clone:
+to git clone
+
+paste this in your terminal
+
+
 git clone https://github.com/kujotaroooo/sqli_scanner.py
+
 
 How to use it
 
 so after zapping the website with zap (you can find it in my repo) you know important file paths of the website target 
 
 you target it like this:
+
 C:\myprojloc>python sqli_scanner.py "https://website_name/importantfilepath?id=1"
 
 
 example: 
+
 C:\myprojloc>python sqli_scanner.py "https://archivewordz.fwh.is/database.php?id=1"
 
 Do NOT scan or test websites without permission.
