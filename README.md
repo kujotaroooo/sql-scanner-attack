@@ -15,12 +15,14 @@ bash
 pip install requests
 
 you can git clone or just copy the code and create file
+
+
 to git clone
 
 paste this in your terminal
 
 
-git clone https://github.com/kujotaroooo/sqli_scanner.py
+"git clone https://github.com/kujotaroooo/sqli_scanner.py"
 
 
 How to use it
