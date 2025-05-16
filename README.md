@@ -1,4 +1,4 @@
-# SQLi Scanner - Advance SQL Injection Testing Tool
+# SQLi Scanner - Advance SQL Injection
 
 > ⚠️ **WARNING: Only use this tool on websites you own or have explicit permission to test. Unauthorized testing is illegal and unethical.** ⚠️
 
