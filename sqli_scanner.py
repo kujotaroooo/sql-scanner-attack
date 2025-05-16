@@ -48,7 +48,7 @@ def inject_get(url):
                         print(f"    Error: {error}")
                         return
             except Exception as e:
-                print(f"[-] Request failed: {e}")
+                print(f"[-] Request faileed: {e}")
 
     
     print("[*] Testing blind SQLi (time delay)...")
